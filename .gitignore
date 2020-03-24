@@ -8,3 +8,4 @@ test/aws/.terraform/*
 /ansible/inventory/hosts.yml
 /ansible/group_vars/vault/encrypted-vault.yml
 /ansible/group_vars/vault/vault.yml
+#/secrets/.secrets.env
