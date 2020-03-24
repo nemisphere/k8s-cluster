@@ -17,4 +17,4 @@ spec:
         - name: default
           protocol: layer2
           addresses:
-            - 10.20.50.100-10.20.50.250
+            - 10.100.100.190-10.100.100.240
