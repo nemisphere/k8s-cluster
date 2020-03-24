@@ -20,9 +20,3 @@
     - { role: k3s/bootstrap }
     - { role: flux }
     - { role: helm_operator, when: helm_operator == true }
-
-- hosts: vault
-  gather_facts: true
-  become: false
-  roles:
-    - { role: vault }

@@ -11,12 +11,6 @@
   environment:
     KUBECONFIG: "{{ REPO_ROOT }}/kubeconfig"
 
-- name: Apply nfs annotations
-  command: kubectl label --overwrite node {{ item }} node-role.kubernetes.io/nfs=true
-  loop: "{{ groups['nfs'] }}"
-  environment:
-    KUBECONFIG: "{{ REPO_ROOT }}/kubeconfig"
-
 - name: Apply worker annotations
   command: kubectl label --overwrite node {{ item }} node-role.kubernetes.io/worker=true
   loop: "{{ groups['nodes'] }}"
@@ -29,9 +23,3 @@
   environment:
     KUBECONFIG: "{{ REPO_ROOT }}/kubeconfig"
   when: ceph.converged|bool == false
-
-- name: Apply master annotations
-  command: kubectl taint --overwrite node {{ item }} node-role.kubernetes.io/master=true:NoSchedule
-  loop: "{{ groups['master'] }}"
-  environment:
-    KUBECONFIG: "{{ REPO_ROOT }}/kubeconfig"
