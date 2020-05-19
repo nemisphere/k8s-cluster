@@ -1,0 +1,15 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: nzbget-helm-values
+  namespace: default
+spec:
+  encryptedData:
+    values.yaml: AgBj8BFAMoWv+ap9ehCH83CpPFy3uPWCPafbf49GnnFJ3QiXbOu/j8Uj7oM3IkCGHkCUwR2evilFH1b3AFZmJw6VJCHYp8B01CxrOJ4/+egN/TBr2tk3nAjVKpKEQOGsj4nkB6D+e3xKlr8j4AXcyrUHIhMA/L8WlUOttFOyl5Je8zBQLgSVrq+YEkKF9QSlnqmYxHlXWPuTPGuXlHnnW6Z3ECcSj5VRNjh04rMpUNGqKsHk+2PhvgGm7jcQb8U8F/B/ay6OJvO/FSr22lP1FH2+jyKLDw7nxp8rVR3PBMS9F39NVtpOBsu8+7RG19DoFHe19bzXbmfJFiS/G0o81zqNqS+jrUiGs7gnktosDj29xau40fRDeaEXn4rW73xP/2xWIRy1lCATHX0Ps02uMUoAbfhGSRcs1hgHm0Wgbg2h2JkzFezFXs+eYckH6lqDpsksSZEcxvS/JQtnq0IHgi4bhQ3x7vSF7OpwNkCPTg2XqK3bg/JMuQzGhqWu31blip2CeDju+tqWLzIBZQgZSmwCsguv6gaXBnRhHxfUVG647J/BGk311qj60Dge3XrEnJ0+ljMa6spD+V5Yt206+JpWzB0UaiU4DV+7otL2brXlUhHFhAtkVE+edvHcWUK9pg2BbXOXRxrsIYVDRImgezLaJUovgdqDZdVZFdgNBNevCEcfbebFxT4AF7hs7MKfbZKHG5rsbYw5E1KqTJT61OCqw5+qYdizsmqe848vskD2/g4ROOy7NmZcqUMbUsCzU/72nIoaSAm5t4ByrXIPQFhTg8itULuEfUyFKKX9ejnTzurpWjI=
+  template:
+    metadata:
+      creationTimestamp: null
+      name: nzbget-helm-values
+      namespace: default
+status: {}
