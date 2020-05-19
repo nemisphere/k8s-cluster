@@ -30,7 +30,7 @@ spec:
     persistence:
       downloads:
         enabled: true
-        existingClaim: nfs-tank-share-pvc
+        existingClaim: nfs-synology-pvc
         subPath: nzbget/downloads
       config:
         enabled: true
