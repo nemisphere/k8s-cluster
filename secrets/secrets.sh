@@ -94,13 +94,13 @@ kseal "${REPO_ROOT}/cluster/monitoring/prometheus-operator/prometheus-operator-h
 #     > "$REPO_ROOT"/cluster/kube-system/vault/vault-kms-config.yaml
 
 
-# # AzureDNS - cert-manager namespace
-# kubectl create secret generic azuredns-config  \
-#  --from-literal=client-secret="$AZURE_CERTBOT_CLIENT_SECRET" \
-#  --namespace cert-manager --dry-run -o json \
-#  | \
-# kubeseal --format=yaml --cert="$PUB_CERT" \
-#    > "$REPO_ROOT"/cluster/cert-manager/azuredns/azuredns-config.yaml
+# AzureDNS - cert-manager namespace
+kubectl create secret generic azuredns-config  \
+ --from-literal=client-secret="$AZURE_CERTBOT_CLIENT_SECRET" \
+ --namespace cert-manager --dry-run -o json \
+ | \
+kubeseal --format=yaml --cert="$PUB_CERT" \
+   > "$REPO_ROOT"/cluster/cert-manager/azuredns/azuredns-config.yaml
 
 # # Restic Password for Stash - default namespace
 # kubectl create secret generic restic-backup-credentials  \
