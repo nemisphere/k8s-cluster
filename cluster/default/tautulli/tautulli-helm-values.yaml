@@ -1,0 +1,15 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: tautulli-helm-values
+  namespace: default
+spec:
+  encryptedData:
+    values.yaml: AgC22tXZ+jwfjW8drqpJsfuP9lURkUFMy8hju4nkPT7HJ14Dv448d0tnCCdrzbqRBagC0npwS2QeHl0zJruiaAxHUXLCvV1O0Srvo0Z33J522faYsqg9gWJH30M8rWyVgSOOQF3nHv+SU/apklI6RTBQlJ8xS9U0vXBHIxYwdX1mht+1iuNluDYsM4xOEyLnBqNj98qOJxRqlL8uGV0kUKfEwJVvBlPNIVAqMeBQu7+mV4xo/sriFlqhAH9wYG1OenSvdgsrsynbEuyYgrboW7Kf0J4COeiw/Z5ygUwzD6sglcK9ypk6X/QMlPWJyr0NOyO/NaxU4ZaLnKZgXO0sz7MyO4GNtsUw+lz3BbKKSozgkiJjUQBDfQhoLQSqWQh+aB570BuTKc+DUER8dKGUln5UKjNoddjBnVHnt/DxTVorH0PlNQkbEpskdXMX8XZD/mZiPn7yv8Z8FwwUNriMbsC6WAtjpMsvQ9d5XR9zJ6c+r//syLPPA/uWAttYOSl3UEmh3CpjPWJSFuY4676UlFzOJImgGyH0rF/AZIeJZW7CqsX3IOF+RQCGgyUBBe9EmFPntghWOxFPCnF1zORJRnsGcXja97W1yH6pjFwWSRYkqUM+9gs0+oHF91xs1i45CVto4qAuK0+mR1opXdPGlNjDI7iUR0IOyLxuj1hnbTNjgBRC6M/XYNm0lQbRQsaePUKxuDDneK2eCywn1kH8GlxUV5T1fgpwj3kSRVoPpCDu+FgySP0QOK+alX2DIgRe9bGLMGv+MWuZld5vJbO1NtgCiigBjqe06uViMqQyD7O1Xf3Y9Zq5kQie
+  template:
+    metadata:
+      creationTimestamp: null
+      name: tautulli-helm-values
+      namespace: default
+status: {}
