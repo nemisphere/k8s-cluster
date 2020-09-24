@@ -38,14 +38,14 @@ spec:
     persistence:
       transcode:
         enabled: true
-        storageClass: longhorn
+        storageClass: rook-ceph-block
         accessMode: ReadWriteOnce
         size: 30Gi
       data:
         enabled: true
         claimName: nfs-synology-pvc
       config:
-        storageClass: longhorn
+        storageClass: rook-ceph-block
         size: 300Gi
         accessMode: "ReadWriteOnce"
     # nodeSelector:
