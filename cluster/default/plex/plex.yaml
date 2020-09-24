@@ -24,16 +24,16 @@ spec:
     timezone: "America/New_York"
     allowedNetworks:
       - 10.42.0.0/16
-    advertiseIp: "http://10.45.100.100:32400"
+    advertiseIp: "http://10.100.100.220:32400"
     serviceTCP:
       type: NodePort
       externalIPs:
-        - 10.45.100.100
+        - 10.100.100.220
       externalTrafficPolicy: Local
     serviceUDP:
       type: NodePort
       externalIPs:
-        - 10.45.100.100
+        - 10.45.100.220
       externalTrafficPolicy: Local
     persistence:
       transcode:
@@ -43,7 +43,7 @@ spec:
         size: 30Gi
       data:
         enabled: true
-        claimName: nfs-tank-share-pvc
+        claimName: nfs-synology-pvc
       config:
         storageClass: longhorn
         size: 300Gi
