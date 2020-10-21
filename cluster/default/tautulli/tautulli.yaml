@@ -23,7 +23,7 @@ spec:
       enabled: true
       annotations:
         kubernetes.io/ingress.class: "nginx"
-    timezone: "America/New_York"
+    timezone: "America/Chicago"
     puid: 1000
     pgid: 1000
     persistence:
