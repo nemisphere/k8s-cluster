@@ -8,6 +8,7 @@ metadata:
     release: "tautulli"
     #fluxcd.io/automated: "true"
     #fluxcd.io/tag.chart-image: "glob:latest"
+    #test
 spec:
   releaseName: tautulli
   chart:
