@@ -12,16 +12,16 @@ spec:
   rollback:
     enable: true
   chart:
-    repository: https://billimek.com/billimek-charts/
+    repository: https://k8s-at-home.com/charts
     name: nzbget
-    version: 3.1.2
+    version: 4.0.1
   values:
     image:
       repository: linuxserver/nzbget
-      tag: v21.0-ls62
+      tag: v21.1-r2311-ls9
     service:
       type: LoadBalancer
-      loadBalancerIP: 10.100.100.225
+      loadBalancerIP: 10.100.100.230
     ingress:
       enabled: true
       annotations:
