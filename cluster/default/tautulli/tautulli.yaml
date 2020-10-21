@@ -8,7 +8,6 @@ metadata:
     release: "tautulli"
     #fluxcd.io/automated: "true"
     #fluxcd.io/tag.chart-image: "glob:latest"
-    #test
 spec:
   releaseName: tautulli
   chart:
@@ -19,7 +18,7 @@ spec:
     image:
       repository: linuxserver/tautulli
       tag: v2.5.4-ls11
-      ingress:
+    ingress:
       enabled: true
       annotations:
         kubernetes.io/ingress.class: "nginx"
